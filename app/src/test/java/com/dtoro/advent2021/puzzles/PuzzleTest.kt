@@ -8,7 +8,7 @@ class PuzzleTest {
     @Test
     fun `Day1Part1 sample`() {
         Assert.assertEquals(
-            "7", Day1Part1().run(
+            "7", Day1Part1().runForInput(
                 listOf(
                     "199",
                     "200",
@@ -33,7 +33,7 @@ class PuzzleTest {
     @Test
     fun `Day1Part2 sample`() {
         Assert.assertEquals(
-            "5", Day1Part2().run(
+            "5", Day1Part2().runForInput(
                 listOf(
                     "607",
                     "618",
@@ -56,7 +56,7 @@ class PuzzleTest {
     @Test
     fun `Day2Part1 sample`() {
         Assert.assertEquals(
-            "150", Day2Part1().run(
+            "150", Day2Part1().runForInput(
                 listOf(
                     "forward 5",
                     "down 5",
@@ -77,7 +77,7 @@ class PuzzleTest {
     @Test
     fun `Day2Part2 sample`() {
         Assert.assertEquals(
-            "900", Day2Part2().run(
+            "900", Day2Part2().runForInput(
                 listOf(
                     "forward 5",
                     "down 5",
@@ -94,6 +94,61 @@ class PuzzleTest {
     fun `Day2Part2 puzzle`() {
         Day2Part2().test()
     }
+
+    @Test
+    fun `Day3Part1 sample`() {
+        Assert.assertEquals(
+            "198", Day3Part1().runForInput(
+                listOf(
+                    "00100",
+                    "11110",
+                    "10110",
+                    "10111",
+                    "10101",
+                    "01111",
+                    "00111",
+                    "11100",
+                    "10000",
+                    "11001",
+                    "00010",
+                    "01010",
+                )
+            )
+        )
+    }
+
+    @Test
+    fun `Day3Part1 puzzle`() {
+        Day3Part1().test()
+    }
+
+    @Test
+    fun `Day3Part2 sample`() {
+        Assert.assertEquals(
+            "230", Day3Part2().runForInput(
+                listOf(
+                    "00100",
+                    "11110",
+                    "10110",
+                    "10111",
+                    "10101",
+                    "01111",
+                    "00111",
+                    "11100",
+                    "10000",
+                    "11001",
+                    "00010",
+                    "01010",
+                )
+            )
+        )
+    }
+
+    @Test
+    fun `Day3Part2 puzzle`() {
+        Day3Part2().test()
+    }
+
 
     private fun <T,K> PuzzleBase<T,K>.test() {
         println("$this: ${run()}")

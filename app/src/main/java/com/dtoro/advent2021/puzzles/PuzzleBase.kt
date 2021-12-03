@@ -8,10 +8,10 @@ abstract class PuzzleBase<TInput, TOutput> {
     abstract val part : Int
 
     fun run() : String {
-        return run(InputFetcher.fetchInputForDay(day))
+        return runForInput(InputFetcher.fetchInputForDay(day))
     }
 
-    fun run(input: List<String>) : String {
+    fun runForInput(input: List<String>) : String {
         val convertedInput = input.map { convertInput(it) }
         val result = run(convertedInput)
         return convertOutput(result)
