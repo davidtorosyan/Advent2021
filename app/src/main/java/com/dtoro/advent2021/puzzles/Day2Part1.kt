@@ -3,7 +3,7 @@ package com.dtoro.advent2021.puzzles
 /**
  * https://adventofcode.com/2021/day/2
  */
-class Day2Part1 : PuzzleBase<Day2Part1.Command, Day2Part1.Location>() {
+class Day2Part1 : SimplePuzzleBase<Day2Part1.Command, Day2Part1.Location>() {
 
     override val day = 2
     override val part = 1

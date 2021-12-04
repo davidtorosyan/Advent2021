@@ -12,16 +12,16 @@ abstract class PuzzleBase<TInput, TOutput> {
     }
 
     fun runForInput(input: List<String>) : String {
-        val convertedInput = input.map { convertInput(it) }
+        val convertedInput = convertInput(input)
         val result = run(convertedInput)
         return convertOutput(result)
     }
 
-    abstract fun convertInput(input: String) : TInput
+    abstract fun convertInput(input: List<String>) : TInput
 
     abstract fun convertOutput(output: TOutput) : String
 
-    abstract fun run(input: List<TInput>) : TOutput
+    abstract fun run(input: TInput) : TOutput
 
     override fun toString(): String {
         return "Day $day, part $part"
