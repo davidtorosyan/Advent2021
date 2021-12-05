@@ -213,6 +213,51 @@ class PuzzleTest {
         Day4Part2().test()
     }
 
+    @Test
+    fun `Day5Part1 sample`() {
+        Assert.assertEquals(
+            "5", Day5Part1().runForInput(
+                """0,9 -> 5,9
+8,0 -> 0,8
+9,4 -> 3,4
+2,2 -> 2,1
+7,0 -> 7,4
+6,4 -> 2,0
+0,9 -> 2,9
+3,4 -> 1,4
+0,0 -> 8,8
+5,5 -> 8,2""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day5Part1 puzzle`() {
+        Day5Part1().test()
+    }
+
+    @Test
+    fun `Day5Part2 sample`() {
+        Assert.assertEquals(
+            "12", Day5Part2().runForInput(
+                """0,9 -> 5,9
+8,0 -> 0,8
+9,4 -> 3,4
+2,2 -> 2,1
+7,0 -> 7,4
+6,4 -> 2,0
+0,9 -> 2,9
+3,4 -> 1,4
+0,0 -> 8,8
+5,5 -> 8,2""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day5Part2 puzzle`() {
+        Day5Part2().test()
+    }
 
     private fun <T,K> PuzzleBase<T,K>.test() {
         println("$this: ${run()}")
