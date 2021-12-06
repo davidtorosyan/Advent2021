@@ -259,6 +259,34 @@ class PuzzleTest {
         Day5Part2().test()
     }
 
+    @Test
+    fun `Day6Part1 sample`() {
+        Assert.assertEquals(
+            "5934", Day6Part1().runForInput(
+                """3,4,3,1,2""".trimMargin().lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day6Part1 puzzle`() {
+        Day6Part1().test()
+    }
+
+    @Test
+    fun `Day6Part2 sample`() {
+        Assert.assertEquals(
+            "26984457539", Day6Part2().runForInput(
+                """3,4,3,1,2""".trimMargin().lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day6Part2 puzzle`() {
+        Day6Part2().test()
+    }
+
     private fun <T,K> PuzzleBase<T,K>.test() {
         println("$this: ${run()}")
     }
