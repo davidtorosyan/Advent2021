@@ -263,7 +263,7 @@ class PuzzleTest {
     fun `Day6Part1 sample`() {
         Assert.assertEquals(
             "5934", Day6Part1().runForInput(
-                """3,4,3,1,2""".trimMargin().lines()
+                """3,4,3,1,2""".lines()
             )
         )
     }
@@ -277,7 +277,7 @@ class PuzzleTest {
     fun `Day6Part2 sample`() {
         Assert.assertEquals(
             "26984457539", Day6Part2().runForInput(
-                """3,4,3,1,2""".trimMargin().lines()
+                """3,4,3,1,2""".lines()
             )
         )
     }
@@ -285,6 +285,34 @@ class PuzzleTest {
     @Test
     fun `Day6Part2 puzzle`() {
         Day6Part2().test()
+    }
+
+    @Test
+    fun `Day7Part1 sample`() {
+        Assert.assertEquals(
+            "37", Day7Part1().runForInput(
+                """16,1,2,0,4,2,7,1,2,14""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day7Part1 puzzle`() {
+        Day7Part1().test()
+    }
+
+    @Test
+    fun `Day7Part2 sample`() {
+        Assert.assertEquals(
+            "168", Day7Part2().runForInput(
+                """16,1,2,0,4,2,7,1,2,14""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day7Part2 puzzle`() {
+        Day7Part2().test()
     }
 
     private fun <T,K> PuzzleBase<T,K>.test() {
