@@ -2,6 +2,7 @@ package com.dtoro.advent2021.puzzles
 
 /**
  * https://adventofcode.com/2021/day/6
+ * Lanternfish
  */
 class Day6Part2 : PuzzleBase<Day6Part2.Fish, Day6Part2.Fish>() {
 

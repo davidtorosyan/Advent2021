@@ -4,6 +4,7 @@ import java.util.*
 
 /**
  * https://adventofcode.com/2021/day/7
+ * The Treachery of Whales
  */
 class Day7Part2 : PuzzleBase<List<Int>, Int>() {
 

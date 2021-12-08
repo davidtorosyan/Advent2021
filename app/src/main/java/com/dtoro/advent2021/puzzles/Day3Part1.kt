@@ -2,6 +2,7 @@ package com.dtoro.advent2021.puzzles
 
 /**
  * https://adventofcode.com/2021/day/3
+ * Binary Diagnostic
  */
 class Day3Part1 : SimplePuzzleBase<String, Day3Part1.Power>() {
 

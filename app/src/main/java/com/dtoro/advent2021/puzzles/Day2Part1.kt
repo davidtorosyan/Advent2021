@@ -2,6 +2,7 @@ package com.dtoro.advent2021.puzzles
 
 /**
  * https://adventofcode.com/2021/day/2
+ * Dive!
  */
 class Day2Part1 : SimplePuzzleBase<Day2Part1.Command, Day2Part1.Location>() {
 

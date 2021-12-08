@@ -2,6 +2,7 @@ package com.dtoro.advent2021.puzzles
 
 /**
  * https://adventofcode.com/2021/day/5
+ * Hydrothermal Venture
  */
 class Day5Part1 : SimplePuzzleBase<Day5Part1.Line, Int>() {
 

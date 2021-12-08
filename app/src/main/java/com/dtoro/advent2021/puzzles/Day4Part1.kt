@@ -2,6 +2,7 @@ package com.dtoro.advent2021.puzzles
 
 /**
  * https://adventofcode.com/2021/day/4
+ * Giant Squid
  */
 class Day4Part1 : PuzzleBase<Day4Part1.Bingo, Day4Part1.Winner>() {
 

@@ -2,6 +2,7 @@ package com.dtoro.advent2021.puzzles
 
 /**
  * https://adventofcode.com/2021/day/7
+ * The Treachery of Whales
  */
 class Day7Part1 : PuzzleBase<List<Int>, Int>() {
 
