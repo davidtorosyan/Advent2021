@@ -384,6 +384,42 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
         Day8Part2Generic().test()
     }
 
+    @Test
+    fun `Day9Part1 sample`() {
+        Assert.assertEquals(
+            "15", Day9Part1().runForInput(
+                """2199943210
+3987894921
+9856789892
+8767896789
+9899965678""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day9Part1 puzzle`() {
+        Day9Part1().test()
+    }
+
+    @Test
+    fun `Day9Part2 sample`() {
+        Assert.assertEquals(
+            "1134", Day9Part2().runForInput(
+                """2199943210
+3987894921
+9856789892
+8767896789
+9899965678""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day9Part2 puzzle`() {
+        Day9Part2().test()
+    }
+
     private fun <T,K> PuzzleBase<T,K>.test() {
         println("$this: ${run()}")
     }
