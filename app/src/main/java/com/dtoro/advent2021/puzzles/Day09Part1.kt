@@ -4,7 +4,7 @@ package com.dtoro.advent2021.puzzles
  * https://adventofcode.com/2021/day/9
  * Smoke Basin
  */
-class Day9Part1 : SimplePuzzleBase<List<Int>, List<Int>>() {
+class Day09Part1 : SimplePuzzleBase<List<Int>, List<Int>>() {
 
     override val day = 9
     override val part = 1

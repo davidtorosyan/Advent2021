@@ -4,10 +4,10 @@ package com.dtoro.advent2021.puzzles
  * https://adventofcode.com/2021/day/4
  * Giant Squid
  */
-class Day4Part2 : PuzzleBase<Day4Part2.Bingo, Day4Part2.Winner>() {
+class Day04Part1 : PuzzleBase<Day04Part1.Bingo, Day04Part1.Winner>() {
 
     override val day = 4
-    override val part = 2
+    override val part = 1
 
     companion object {
         private const val boardSize = 5
@@ -84,17 +84,11 @@ class Day4Part2 : PuzzleBase<Day4Part2.Bingo, Day4Part2.Winner>() {
     }
 
     override fun run(input: Bingo) : Winner {
-        val candidates = input.boards.toMutableList()
         for (number in input.numbers) {
-            for (board in candidates.toList()) {
+            for (board in input.boards) {
                 board.applyNumber(number)
                 if (board.isWinner()) {
-                    if (candidates.size == 1) {
-                        return Winner(board = board, lastNumber = number)
-                    }
-                    else {
-                        candidates.remove(board)
-                    }
+                    return Winner(board = board, lastNumber = number)
                 }
             }
         }

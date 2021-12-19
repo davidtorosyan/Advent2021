@@ -6,7 +6,7 @@ import kotlin.math.sign
  * https://adventofcode.com/2021/day/8
  * Seven Segment Search
  */
-class Day8Part2Generic : SimplePuzzleBase<Day8Part2Generic.Entry, List<Int>>() {
+class Day08Part2Generic : SimplePuzzleBase<Day08Part2Generic.Entry, List<Int>>() {
 
     override val day = 8
     override val part = 2

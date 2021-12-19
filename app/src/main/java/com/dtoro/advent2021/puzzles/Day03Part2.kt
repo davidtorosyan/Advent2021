@@ -4,7 +4,7 @@ package com.dtoro.advent2021.puzzles
  * https://adventofcode.com/2021/day/3
  * Binary Diagnostic
  */
-class Day3Part2 : SimplePuzzleBase<String, Day3Part2.LifeSupport>() {
+class Day03Part2 : SimplePuzzleBase<String, Day03Part2.LifeSupport>() {
 
     override val day = 3
     override val part = 1

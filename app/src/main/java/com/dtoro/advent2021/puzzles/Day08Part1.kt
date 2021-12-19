@@ -4,7 +4,7 @@ package com.dtoro.advent2021.puzzles
  * https://adventofcode.com/2021/day/8
  * Seven Segment Search
  */
-class Day8Part1 : SimplePuzzleBase<Day8Part1.Entry, Int>() {
+class Day08Part1 : SimplePuzzleBase<Day08Part1.Entry, Int>() {
 
     override val day = 8
     override val part = 1

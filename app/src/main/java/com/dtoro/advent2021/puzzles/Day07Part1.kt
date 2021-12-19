@@ -4,7 +4,7 @@ package com.dtoro.advent2021.puzzles
  * https://adventofcode.com/2021/day/7
  * The Treachery of Whales
  */
-class Day7Part1 : PuzzleBase<List<Int>, Int>() {
+class Day07Part1 : PuzzleBase<List<Int>, Int>() {
 
     override val day = 7
     override val part = 1

@@ -4,7 +4,7 @@ package com.dtoro.advent2021.puzzles
  * https://adventofcode.com/2021/day/5
  * Hydrothermal Venture
  */
-class Day5Part2 : SimplePuzzleBase<Day5Part2.Line, Int>() {
+class Day05Part2 : SimplePuzzleBase<Day05Part2.Line, Int>() {
 
     override val day = 5
     override val part = 2

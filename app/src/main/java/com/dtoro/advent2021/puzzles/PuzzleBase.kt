@@ -24,6 +24,10 @@ abstract class PuzzleBase<TInput, TOutput> {
     abstract fun run(input: TInput) : TOutput
 
     override fun toString(): String {
-        return "Day $day, part $part"
+        return "Day ${day.padLeft()}, part $part"
+    }
+
+    private fun Int.padLeft(): String {
+        return this.toString().padStart(length = 2, padChar = '0')
     }
 }

@@ -4,24 +4,24 @@ package com.dtoro.advent2021.puzzles
  * https://adventofcode.com/2021/day/6
  * Lanternfish
  */
-class Day6Part2 : PuzzleBase<Day6Part2.Fish, Day6Part2.Fish>() {
+class Day06Part1 : PuzzleBase<Day06Part1.Fish, Day06Part1.Fish>() {
 
     override val day = 6
-    override val part = 2
+    override val part = 1
 
     companion object {
         private const val REPRO_DAYS = 7
         private const val ADDITIONAL_DAYS_FOR_NEW = 2
-        private const val DEFAULT_SIMULATION_DAYS = 256
+        private const val DEFAULT_SIMULATION_DAYS = 80
     }
 
-    data class Fish(val countsPerDay: List<Long>, val daysLeft: Int)
+    data class Fish(val countsPerDay: List<Int>, val daysLeft: Int)
 
     override fun convertInput(input: List<String>): Fish {
         val fishCounts = input.first()
         val simulationDays = input.drop(1).firstOrNull()?.toInt() ?: DEFAULT_SIMULATION_DAYS
 
-        val countsPerDay = Array(REPRO_DAYS + ADDITIONAL_DAYS_FOR_NEW) { 0L }
+        val countsPerDay = Array(REPRO_DAYS + ADDITIONAL_DAYS_FOR_NEW) { 0 }
         fishCounts.split(",").map { it.toInt() }.forEach {
             countsPerDay[it]++
         }

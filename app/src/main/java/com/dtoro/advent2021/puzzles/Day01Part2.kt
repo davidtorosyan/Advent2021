@@ -4,7 +4,7 @@ package com.dtoro.advent2021.puzzles
  * https://adventofcode.com/2021/day/1
  * Sonar Sweep
  */
-class Day1Part2 : SimplePuzzleBase<Int, Int>() {
+class Day01Part2 : SimplePuzzleBase<Int, Int>() {
 
     override val day = 1
     override val part = 2

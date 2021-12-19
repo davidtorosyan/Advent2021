@@ -6,9 +6,9 @@ import org.junit.Test
 class PuzzleTest {
 
     @Test
-    fun `Day1Part1 sample`() {
+    fun `Day01Part1 sample`() {
         Assert.assertEquals(
-            "7", Day1Part1().runForInput(
+            "7", Day01Part1().runForInput(
                 listOf(
                     "199",
                     "200",
@@ -26,14 +26,14 @@ class PuzzleTest {
     }
 
     @Test
-    fun `Day1Part1 puzzle`() {
-        Day1Part1().test()
+    fun `Day01Part1 puzzle`() {
+        Day01Part1().test()
     }
 
     @Test
-    fun `Day1Part2 sample`() {
+    fun `Day01Part2 sample`() {
         Assert.assertEquals(
-            "5", Day1Part2().runForInput(
+            "5", Day01Part2().runForInput(
                 listOf(
                     "607",
                     "618",
@@ -49,14 +49,14 @@ class PuzzleTest {
     }
 
     @Test
-    fun `Day1Part2 puzzle`() {
-        Day1Part2().test()
+    fun `Day01Part2 puzzle`() {
+        Day01Part2().test()
     }
 
     @Test
-    fun `Day2Part1 sample`() {
+    fun `Day02Part1 sample`() {
         Assert.assertEquals(
-            "150", Day2Part1().runForInput(
+            "150", Day02Part1().runForInput(
                 listOf(
                     "forward 5",
                     "down 5",
@@ -70,14 +70,14 @@ class PuzzleTest {
     }
 
     @Test
-    fun `Day2Part1 puzzle`() {
-        Day2Part1().test()
+    fun `Day02Part1 puzzle`() {
+        Day02Part1().test()
     }
 
     @Test
-    fun `Day2Part2 sample`() {
+    fun `Day02Part2 sample`() {
         Assert.assertEquals(
-            "900", Day2Part2().runForInput(
+            "900", Day02Part2().runForInput(
                 listOf(
                     "forward 5",
                     "down 5",
@@ -91,14 +91,14 @@ class PuzzleTest {
     }
 
     @Test
-    fun `Day2Part2 puzzle`() {
-        Day2Part2().test()
+    fun `Day02Part2 puzzle`() {
+        Day02Part2().test()
     }
 
     @Test
-    fun `Day3Part1 sample`() {
+    fun `Day03Part1 sample`() {
         Assert.assertEquals(
-            "198", Day3Part1().runForInput(
+            "198", Day03Part1().runForInput(
                 listOf(
                     "00100",
                     "11110",
@@ -118,14 +118,14 @@ class PuzzleTest {
     }
 
     @Test
-    fun `Day3Part1 puzzle`() {
-        Day3Part1().test()
+    fun `Day03Part1 puzzle`() {
+        Day03Part1().test()
     }
 
     @Test
-    fun `Day3Part2 sample`() {
+    fun `Day03Part2 sample`() {
         Assert.assertEquals(
-            "230", Day3Part2().runForInput(
+            "230", Day03Part2().runForInput(
                 listOf(
                     "00100",
                     "11110",
@@ -145,14 +145,14 @@ class PuzzleTest {
     }
 
     @Test
-    fun `Day3Part2 puzzle`() {
-        Day3Part2().test()
+    fun `Day03Part2 puzzle`() {
+        Day03Part2().test()
     }
 
     @Test
-    fun `Day4Part1 sample`() {
+    fun `Day04Part1 sample`() {
         Assert.assertEquals(
-            "4512", Day4Part1().runForInput(
+            "4512", Day04Part1().runForInput(
                 """7,4,9,5,11,17,23,2,0,14,21,24,10,16,13,6,15,25,12,22,18,20,8,19,3,26,1
 
 22 13 17 11  0
@@ -177,14 +177,14 @@ class PuzzleTest {
     }
 
     @Test
-    fun `Day4Part1 puzzle`() {
-        Day4Part1().test()
+    fun `Day04Part1 puzzle`() {
+        Day04Part1().test()
     }
 
     @Test
-    fun `Day4Part2 sample`() {
+    fun `Day04Part2 sample`() {
         Assert.assertEquals(
-            "1924", Day4Part2().runForInput(
+            "1924", Day04Part2().runForInput(
                 """7,4,9,5,11,17,23,2,0,14,21,24,10,16,13,6,15,25,12,22,18,20,8,19,3,26,1
 
 22 13 17 11  0
@@ -209,14 +209,14 @@ class PuzzleTest {
     }
 
     @Test
-    fun `Day4Part2 puzzle`() {
-        Day4Part2().test()
+    fun `Day04Part2 puzzle`() {
+        Day04Part2().test()
     }
 
     @Test
-    fun `Day5Part1 sample`() {
+    fun `Day05Part1 sample`() {
         Assert.assertEquals(
-            "5", Day5Part1().runForInput(
+            "5", Day05Part1().runForInput(
                 """0,9 -> 5,9
 8,0 -> 0,8
 9,4 -> 3,4
@@ -232,14 +232,14 @@ class PuzzleTest {
     }
 
     @Test
-    fun `Day5Part1 puzzle`() {
-        Day5Part1().test()
+    fun `Day05Part1 puzzle`() {
+        Day05Part1().test()
     }
 
     @Test
-    fun `Day5Part2 sample`() {
+    fun `Day05Part2 sample`() {
         Assert.assertEquals(
-            "12", Day5Part2().runForInput(
+            "12", Day05Part2().runForInput(
                 """0,9 -> 5,9
 8,0 -> 0,8
 9,4 -> 3,4
@@ -255,70 +255,70 @@ class PuzzleTest {
     }
 
     @Test
-    fun `Day5Part2 puzzle`() {
-        Day5Part2().test()
+    fun `Day05Part2 puzzle`() {
+        Day05Part2().test()
     }
 
     @Test
-    fun `Day6Part1 sample`() {
+    fun `Day06Part1 sample`() {
         Assert.assertEquals(
-            "5934", Day6Part1().runForInput(
+            "5934", Day06Part1().runForInput(
                 """3,4,3,1,2""".lines()
             )
         )
     }
 
     @Test
-    fun `Day6Part1 puzzle`() {
-        Day6Part1().test()
+    fun `Day06Part1 puzzle`() {
+        Day06Part1().test()
     }
 
     @Test
-    fun `Day6Part2 sample`() {
+    fun `Day06Part2 sample`() {
         Assert.assertEquals(
-            "26984457539", Day6Part2().runForInput(
+            "26984457539", Day06Part2().runForInput(
                 """3,4,3,1,2""".lines()
             )
         )
     }
 
     @Test
-    fun `Day6Part2 puzzle`() {
-        Day6Part2().test()
+    fun `Day06Part2 puzzle`() {
+        Day06Part2().test()
     }
 
     @Test
-    fun `Day7Part1 sample`() {
+    fun `Day07Part1 sample`() {
         Assert.assertEquals(
-            "37", Day7Part1().runForInput(
+            "37", Day07Part1().runForInput(
                 """16,1,2,0,4,2,7,1,2,14""".lines()
             )
         )
     }
 
     @Test
-    fun `Day7Part1 puzzle`() {
-        Day7Part1().test()
+    fun `Day07Part1 puzzle`() {
+        Day07Part1().test()
     }
 
     @Test
-    fun `Day7Part2 sample`() {
+    fun `Day07Part2 sample`() {
         Assert.assertEquals(
-            "168", Day7Part2().runForInput(
+            "168", Day07Part2().runForInput(
                 """16,1,2,0,4,2,7,1,2,14""".lines()
             )
         )
     }
 
     @Test
-    fun `Day7Part2 puzzle`() {
-        Day7Part2().test()
+    fun `Day07Part2 puzzle`() {
+        Day07Part2().test()
     }
 
     @Test
-    fun `Day8Part1 sample`() {
+    fun `Day08Part1 sample`() {
         Assert.assertEquals(
-            "26", Day8Part1().runForInput(
+            "26", Day08Part1().runForInput(
                 """be cfbegad cbdgef fgaecd cgeb fdcge agebfd fecdb fabcd edb | fdgacbe cefdb cefbgd gcbe
 edbfga begcd cbg gc gcadebf fbgde acbgfd abcde gfcbed gfec | fcgedb cgb dgebacf gc
 fgaebd cg bdaec gdafb agbcfd gdcbef bgcad gfac gcb cdgabef | cg cg fdcagb cbg
@@ -334,14 +334,14 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
     }
 
     @Test
-    fun `Day8Part1 puzzle`() {
-        Day8Part1().test()
+    fun `Day08Part1 puzzle`() {
+        Day08Part1().test()
     }
 
     @Test
-    fun `Day8Part2 sample`() {
+    fun `Day08Part2 sample`() {
         Assert.assertEquals(
-            "61229", Day8Part2().runForInput(
+            "61229", Day08Part2().runForInput(
                 """be cfbegad cbdgef fgaecd cgeb fdcge agebfd fecdb fabcd edb | fdgacbe cefdb cefbgd gcbe
 edbfga begcd cbg gc gcadebf fbgde acbgfd abcde gfcbed gfec | fcgedb cgb dgebacf gc
 fgaebd cg bdaec gdafb agbcfd gdcbef bgcad gfac gcb cdgabef | cg cg fdcagb cbg
@@ -357,14 +357,14 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
     }
 
     @Test
-    fun `Day8Part2 puzzle`() {
-        Day8Part2().test()
+    fun `Day08Part2 puzzle`() {
+        Day08Part2().test()
     }
 
     @Test
-    fun `Day8Part2Generic sample`() {
+    fun `Day08Part2Generic sample`() {
         Assert.assertEquals(
-            "61229", Day8Part2Generic().runForInput(
+            "61229", Day08Part2Generic().runForInput(
                 """be cfbegad cbdgef fgaecd cgeb fdcge agebfd fecdb fabcd edb | fdgacbe cefdb cefbgd gcbe
 edbfga begcd cbg gc gcadebf fbgde acbgfd abcde gfcbed gfec | fcgedb cgb dgebacf gc
 fgaebd cg bdaec gdafb agbcfd gdcbef bgcad gfac gcb cdgabef | cg cg fdcagb cbg
@@ -380,14 +380,14 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
     }
 
     @Test
-    fun `Day8Part2Generic puzzle`() {
-        Day8Part2Generic().test()
+    fun `Day08Part2Generic puzzle`() {
+        Day08Part2Generic().test()
     }
 
     @Test
-    fun `Day9Part1 sample`() {
+    fun `Day09Part1 sample`() {
         Assert.assertEquals(
-            "15", Day9Part1().runForInput(
+            "15", Day09Part1().runForInput(
                 """2199943210
 3987894921
 9856789892
@@ -398,14 +398,14 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
     }
 
     @Test
-    fun `Day9Part1 puzzle`() {
-        Day9Part1().test()
+    fun `Day09Part1 puzzle`() {
+        Day09Part1().test()
     }
 
     @Test
-    fun `Day9Part2 sample`() {
+    fun `Day09Part2 sample`() {
         Assert.assertEquals(
-            "1134", Day9Part2().runForInput(
+            "1134", Day09Part2().runForInput(
                 """2199943210
 3987894921
 9856789892
@@ -416,8 +416,8 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
     }
 
     @Test
-    fun `Day9Part2 puzzle`() {
-        Day9Part2().test()
+    fun `Day09Part2 puzzle`() {
+        Day09Part2().test()
     }
 
     private fun <T,K> PuzzleBase<T,K>.test() {
