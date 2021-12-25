@@ -420,6 +420,52 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
         Day09Part2().test()
     }
 
+    @Test
+    fun `Day10Part1 sample`() {
+        Assert.assertEquals(
+            "26397", Day10Part1().runForInput(
+                """[({(<(())[]>[[{[]{<()<>>
+[(()[<>])]({[<{<<[]>>(
+{([(<{}[<>[]}>{[]{[(<()>
+(((({<>}<{<{<>}{[]{[]{}
+[[<[([]))<([[{}[[()]]]
+[{[{({}]{}}([{[{{{}}([]
+{<[[]]>}<{[{[{[]{()[[[]
+[<(<(<(<{}))><([]([]()
+<{([([[(<>()){}]>(<<{{
+<{([{{}}[<[[[<>{}]]]>[]]""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day10Part1 puzzle`() {
+        Day10Part1().test()
+    }
+
+    @Test
+    fun `Day10Part2 sample`() {
+        Assert.assertEquals(
+            "288957", Day10Part2().runForInput(
+                """[({(<(())[]>[[{[]{<()<>>
+[(()[<>])]({[<{<<[]>>(
+{([(<{}[<>[]}>{[]{[(<()>
+(((({<>}<{<{<>}{[]{[]{}
+[[<[([]))<([[{}[[()]]]
+[{[{({}]{}}([{[{{{}}([]
+{<[[]]>}<{[{[{[]{()[[[]
+[<(<(<(<{}))><([]([]()
+<{([([[(<>()){}]>(<<{{
+<{([{{}}[<[[[<>{}]]]>[]]""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day10Part2 puzzle`() {
+        Day10Part2().test()
+    }
+
     private fun <T,K> PuzzleBase<T,K>.test() {
         println("$this: ${run()}")
     }
