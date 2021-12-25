@@ -119,8 +119,8 @@ class Day08Part2Generic : SimplePuzzleBase<Day08Part2Generic.Entry, List<Int>>()
     }
 
     private fun List<Signal>.findMapping(strategy: List<Signature>) : Map<Signal, Int> {
-        if (segments.values != this.toSet()) {
-            error("Mismatched segments and inputs!")
+        if (segments.values.map { it.active.size }.toSet() != this.map { it.active.size }.toSet()) {
+            error("Mismatched segments and inputs! 1=${segments.values}, 2=${this.toSet()}")
         }
 
         val discovered = mutableMapOf<Int?, Signal>(
