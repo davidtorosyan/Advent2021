@@ -466,6 +466,52 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
         Day10Part2().test()
     }
 
+    @Test
+    fun `Day11Part1 sample`() {
+        Assert.assertEquals(
+            "1656", Day11Part1().runForInput(
+                """5483143223
+2745854711
+5264556173
+6141336146
+6357385478
+4167524645
+2176841721
+6882881134
+4846848554
+5283751526""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day11Part1 puzzle`() {
+        Day11Part1().test()
+    }
+
+    @Test
+    fun `Day11Part2 sample`() {
+        Assert.assertEquals(
+            "195", Day11Part2().runForInput(
+                """5483143223
+2745854711
+5264556173
+6141336146
+6357385478
+4167524645
+2176841721
+6882881134
+4846848554
+5283751526""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day11Part2 puzzle`() {
+        Day11Part2().test()
+    }
+
     private fun <T,K> PuzzleBase<T,K>.test() {
         println("$this: ${run()}")
     }
