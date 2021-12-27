@@ -512,6 +512,134 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce
         Day11Part2().test()
     }
 
+    @Test
+    fun `Day12Part1 sample 1`() {
+        Assert.assertEquals(
+            "10", Day12Part1().runForInput(
+                """start-A
+start-b
+A-c
+A-b
+b-d
+A-end
+b-end""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day12Part1 sample 2`() {
+        Assert.assertEquals(
+            "19", Day12Part1().runForInput(
+                """dc-end
+HN-start
+start-kj
+dc-start
+dc-HN
+LN-dc
+HN-end
+kj-sa
+kj-HN
+kj-dc""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day12Part1 sample 3`() {
+        Assert.assertEquals(
+            "226", Day12Part1().runForInput(
+                """fs-end
+he-DX
+fs-he
+start-DX
+pj-DX
+end-zg
+zg-sl
+zg-pj
+pj-he
+RW-he
+fs-DX
+pj-RW
+zg-RW
+start-pj
+he-WI
+zg-he
+pj-fs
+start-RW""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day12Part1 puzzle`() {
+        Day12Part1().test()
+    }
+
+    @Test
+    fun `Day12Part2 sample 1`() {
+        Assert.assertEquals(
+            "36", Day12Part2().runForInput(
+                """start-A
+start-b
+A-c
+A-b
+b-d
+A-end
+b-end""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day12Part2 sample 2`() {
+        Assert.assertEquals(
+            "103", Day12Part2().runForInput(
+                """dc-end
+HN-start
+start-kj
+dc-start
+dc-HN
+LN-dc
+HN-end
+kj-sa
+kj-HN
+kj-dc""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day12Part2 sample 3`() {
+        Assert.assertEquals(
+            "3509", Day12Part2().runForInput(
+                """fs-end
+he-DX
+fs-he
+start-DX
+pj-DX
+end-zg
+zg-sl
+zg-pj
+pj-he
+RW-he
+fs-DX
+pj-RW
+zg-RW
+start-pj
+he-WI
+zg-he
+pj-fs
+start-RW""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day12Part2 puzzle`() {
+        Day12Part2().test()
+    }
+
     private fun <T,K> PuzzleBase<T,K>.test() {
         println("$this: ${run()}")
     }
