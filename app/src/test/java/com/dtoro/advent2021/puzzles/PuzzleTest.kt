@@ -679,6 +679,68 @@ fold along x=5""".lines()
         Day13Part2().test()
     }
 
+    @Test
+    fun `Day14Part1 sample`() {
+        Assert.assertEquals(
+            "1588", Day14Part1().runForInput(
+                """NNCB
+
+CH -> B
+HH -> N
+CB -> H
+NH -> C
+HB -> C
+HC -> B
+HN -> C
+NN -> C
+BH -> H
+NC -> B
+NB -> B
+BN -> B
+BB -> N
+BC -> B
+CC -> N
+CN -> C""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day14Part1 puzzle`() {
+        Day14Part1().test()
+    }
+
+    @Test
+    fun `Day14Part2 sample`() {
+        Assert.assertEquals(
+            "2188189693529", Day14Part2().runForInput(
+                """NNCB
+
+CH -> B
+HH -> N
+CB -> H
+NH -> C
+HB -> C
+HC -> B
+HN -> C
+NN -> C
+BH -> H
+NC -> B
+NB -> B
+BN -> B
+BB -> N
+BC -> B
+CC -> N
+CN -> C""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day14Part2 puzzle`() {
+        Day14Part2().test()
+    }
+
     private fun <T,K> PuzzleBase<T,K>.test() {
         println("$this: ${run()}")
     }
