@@ -787,6 +787,37 @@ CN -> C""".lines()
         Day15Part2().test()
     }
 
+    @Test
+    fun `Day16Part1 sample`() {
+        Assert.assertEquals("16", Day16Part1().runForInput("8A004A801A8002F478".lines()))
+        Assert.assertEquals("12", Day16Part1().runForInput("620080001611562C8802118E34".lines()))
+        Assert.assertEquals("23", Day16Part1().runForInput("C0015000016115A2E0802F182340".lines()))
+        Assert.assertEquals("31", Day16Part1().runForInput("A0016C880162017C3686B18A3D4780".lines()))
+
+    }
+
+    @Test
+    fun `Day16Part1 puzzle`() {
+        Day16Part1().test()
+    }
+
+    @Test
+    fun `Day16Part2 sample`() {
+        Assert.assertEquals("3", Day16Part2().runForInput("C200B40A82".lines()))
+        Assert.assertEquals("54", Day16Part2().runForInput("04005AC33890".lines()))
+        Assert.assertEquals("7", Day16Part2().runForInput("880086C3E88112".lines()))
+        Assert.assertEquals("9", Day16Part2().runForInput("CE00C43D881120".lines()))
+        Assert.assertEquals("1", Day16Part2().runForInput("D8005AC2A8F0".lines()))
+        Assert.assertEquals("0", Day16Part2().runForInput("F600BC2D8F".lines()))
+        Assert.assertEquals("0", Day16Part2().runForInput("9C005AC2F8F0".lines()))
+        Assert.assertEquals("1", Day16Part2().runForInput("9C0141080250320F1802104A08".lines()))
+    }
+
+    @Test
+    fun `Day16Part2 puzzle`() {
+        Day16Part2().test()
+    }
+
     private fun <T,K> PuzzleBase<T,K>.test() {
         println("$this: ${run()}")
     }
