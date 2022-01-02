@@ -741,6 +741,52 @@ CN -> C""".lines()
         Day14Part2().test()
     }
 
+    @Test
+    fun `Day15Part1 sample`() {
+        Assert.assertEquals(
+            "40", Day15Part1().runForInput(
+                """1163751742
+1381373672
+2136511328
+3694931569
+7463417111
+1319128137
+1359912421
+3125421639
+1293138521
+2311944581""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day15Part1 puzzle`() {
+        Day15Part1().test()
+    }
+
+    @Test
+    fun `Day15Part2 sample`() {
+        Assert.assertEquals(
+            "315", Day15Part2().runForInput(
+                """1163751742
+1381373672
+2136511328
+3694931569
+7463417111
+1319128137
+1359912421
+3125421639
+1293138521
+2311944581""".lines()
+            )
+        )
+    }
+
+    @Test
+    fun `Day15Part2 puzzle`() {
+        Day15Part2().test()
+    }
+
     private fun <T,K> PuzzleBase<T,K>.test() {
         println("$this: ${run()}")
     }
