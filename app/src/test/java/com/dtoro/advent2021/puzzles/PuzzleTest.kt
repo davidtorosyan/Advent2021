@@ -818,6 +818,26 @@ CN -> C""".lines()
         Day16Part2().test()
     }
 
+    @Test
+    fun `Day17Part1 sample`() {
+        Assert.assertEquals("45", Day17Part1().runForInput("target area: x=20..30, y=-10..-5".lines()))
+    }
+
+    @Test
+    fun `Day17Part1 puzzle`() {
+        Day17Part1().test()
+    }
+
+    @Test
+    fun `Day17Part2 sample`() {
+        Assert.assertEquals("112", Day17Part2().runForInput("target area: x=20..30, y=-10..-5".lines()))
+    }
+
+    @Test
+    fun `Day17Part2 puzzle`() {
+        Day17Part2().test()
+    }
+
     private fun <T,K> PuzzleBase<T,K>.test() {
         println("$this: ${run()}")
     }
